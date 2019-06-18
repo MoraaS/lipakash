@@ -1,0 +1,16 @@
+{
+            "TransactionType": "Pay Bill",
+            "TransID": "NFI71H8QGJ",
+            "TransTime": "20190618093851",
+            "TransAmount": "5.00",
+            "BusinessShortCode": "601527",
+            "BillRefNumber": "testinv",
+            "InvoiceNumber": "",
+            "OrgAccountBalance": "81086.00",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254708374149",
+            "FirstName": "John",
+            "MiddleName": "J.",
+            "LastName": "Doe"
+        }
+        
