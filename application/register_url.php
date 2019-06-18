@@ -34,8 +34,8 @@
     //obtain short code from test codes of dev portal
     'ShortCode' => '601527',
     'ResponseType' => 'Confirmed',
-    'ConfirmationURL' => __DIR__.'mpesa\confirmation_url.php',
-    'ValidationURL' => __DIR__.'mpesa\validation_url.php'
+    'ConfirmationURL' => 'C:\Apache24\htdocs\lipakash\application\confirmation_url.php',
+    'ValidationURL' => 'C:\Apache24\htdocs\lipakash\application\validation_url.php'
     );
 
     $data_string = json_encode($curl_post_data);
