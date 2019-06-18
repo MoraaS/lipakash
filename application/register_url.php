@@ -38,6 +38,7 @@
     'ValidationURL' => 'C:\Apache24\htdocs\lipakash\application\validation_url.php'
     );
 
+
     $data_string = json_encode($curl_post_data);
 
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
