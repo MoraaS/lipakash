@@ -7,12 +7,15 @@ require 'config.php';
 
     //Retrieving data from mpesa and saving
     //file_get_contents reads file to string
+    //response from mpesa stream
 
     $mpesaResponse = file_get_contents('php://input');
 
     //log the response
     $logFile = "M_PESAConfirmationResponse.txt";
-    $jsonMpesaResponse = json_decode($mpesaResponse, true); 
+    $jsonMpesaResponse = json_decode($mpesaResponse, true); //use this to save to db
+
+    //transaction in an array to be able to execute as an array
 
     $transaction = array(
         ":TransactionType"      =>$jsonMpesaResponse['TransactionType'],
