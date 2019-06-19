@@ -30,14 +30,14 @@ $TransactionDesc = 'Cart Payment for online';
 $Amount = '1';
 $CallBackURL = 'http://iventsoft.com/salma/lipakash/application/callback_url.php';
 # Get the base64 encoded string -> $password. The passkey is the M-PESA Public Key
-$Password = base64_encode($BusinessShortCode.$Passkey.$Timestamp);
 $Passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'; 
+$Password = base64_encode($BusinessShortCode.$Passkey.$Timestamp);
 
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $initiate_url);
 $stkheader = ['Content-Type:application/json','Authorization:Bearer '.$access_token];
 
-// curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$access_token)); //setting custom header
+curl_setopt($curl, CURLOPT_HTTPHEADER, $stkheader); //setting custom header
 
 
 $curl_post_data = array(
